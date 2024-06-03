@@ -1,0 +1,7 @@
+#Install Guide
+1. git clone https://github.com/tmagyc-k/work
+2. chmod +x tool-script.sh
+3. ./tool-script.sh
+3. cat SSH_alias_config.txt >> ~/.ssh/config
+4. cat SSH_reverse__shell_config >> ~/etc/system/system/autossh.service
+5. (Copy bash or zsh config file into either .bashrc or .zshrc) source ~/.bashrc or ~/.zshrc
