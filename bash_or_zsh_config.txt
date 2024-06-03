@@ -1,0 +1,32 @@
+#updates
+alias sup='sudo apt update && sudo apt upgrade -y'
+
+#view/move
+alias ..='cd ..'
+alias untar='tar -zxvf $1'
+alias cls='clear; ls'
+alias ccls='..; cls'
+
+alias exp='nautilus .'
+
+alias ports='netstat -tulanp'
+
+alias bye='echo "goodnight" && shutdown -r now'
+
+alias ..='cd ..'
+
+alias ping='ping -c 5'
+alias fastping='ping -c 100 -s 2'
+
+alias nsx='screen -S $1'
+
+alias refresh='source ~/.bashrc'
+
+#tmux
+alias tnew='tmux new -s $1'
+alias tmurder='tmux kill-session -t $1'
+alias tls='tmux ls'
+alias tatt='tmux a -t $1'
+
+#reverse
+alias revm='autossh -M 11166 -i /home/thomas/.ssh/id_rsa -p 443 -R 1337:localhost:22 kali:52.237.135.215'

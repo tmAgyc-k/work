@@ -1,0 +1,28 @@
+Host vm1
+	Hostname 52.237.135.215
+	IdentityFile ~/.ssh/keys/to-vm/id_rsa
+	user kali
+	Port 22
+	ForwardX11Trusted yes
+	TCPKeepAlive yes
+Host pc1
+	Hostname 172.16.23.138 
+	IdentityFile ~/.ssh/keys/to-pc/id_rsa
+	user thomas
+	Port 22
+	ForwardX11Trusted yes
+	TCPKeepAlive yes
+Host silver
+	Hostname 172.16.23.128 
+	IdentityFile ~/.ssh/keys/to-silver/id_rsa
+	user offensive
+	Port 22
+	ForwardX11Trusted yes
+	TCPKeepAlive yes
+Host db1
+	Hostname 172.16.23.116
+	IdentityFile ~/.ssh/keys/to-db1/id_rsa
+	user offensive
+	Port 22
+	ForwardX11Trusted yes
+	TCPKeepAlive yes
