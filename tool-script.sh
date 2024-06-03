@@ -8,6 +8,8 @@ tools=(
 	"SharpUp"
 	"Lockdoor-Framework"
 	"Bloodhound"
+	"CrackMapExec"
+	"Impacket"
 )
 
 # Function to check if tools are already installed
@@ -31,6 +33,8 @@ download(){
 	git clone https://github.com/GhostPack/SharpUp.git
 	git clone https://github.com/SofianeHamlaoui/Lockdoor-Framework.git
 	git clone https://github.com/BloodHoundAD/BloodHound.git
+	git clone https://github.com/byt3bl33d3r/CrackMapExec.git
+	git clone https://github.com/fortra/impacket.git
 }
 
 
